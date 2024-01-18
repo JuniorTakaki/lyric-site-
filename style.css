@@ -1,0 +1,256 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: white;
+}
+
+body{
+    
+    font-family: 'popping',sans-serif;
+    overflow-x: hidden;
+    background-color: #666;
+}
+
+nav{
+    background: #161a1de3;    
+    height: 80px;
+    width: 100%;
+}
+
+label.name{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 3%;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0  15px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+}
+
+.container h1{
+    margin-left:20px;
+    margin-top: 40px;
+}
+
+.container .title{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    margin-left:30px;
+}
+
+.container pre{
+    font-size: 18px;
+    width: 700px;
+    
+}
+
+.container pre h1{
+    margin-bottom: -30px;
+    display: inline-block
+}
+
+.container pre .title{
+    margin-bottom: -30px;
+}
+
+.container .musica {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.container .musica iframe {
+    display: flex; /* Isso ajuda a remover margens adicionais no inline elements */
+    justify-content: center;
+    position: fixed;
+}
+
+#a{
+    margin-bottom: -20px;
+    display: flex;
+    justify-content: center;
+    margin-left: -40%;
+}
+.l{
+    font-size: 30px;
+    display: flex;
+    margin-left: 30px;
+}
+
+iframe{
+    display: flex;
+    justify-content: start;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+    width:800px;
+    height:500px;
+}
+
+
+
+
+
+
+    @media screen and (max-width:1600px){
+
+        nav{
+            background: #161a1de3;    
+            height: 80px;
+            width: 100%;
+            max-width: 1800px;
+        }
+
+        .container{
+            
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            flex-direction: row-reverse;
+            
+        }
+
+        iframe{
+            display: flex;
+            justify-content: start;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            width:500px;
+            height:305px;
+        }
+
+        .container .musica iframe {
+            margin: auto; /* Adicione esta linha para centralizar o vídeo */
+            display: flex; /* Isso ajuda a remover margens adicionais no inline elements */
+            justify-content: center;
+            /* position: fixed; */
+        }
+
+        .container pre{
+            margin-top: 20px;
+            font-size: 18px; 
+            display: flex;
+            justify-content: ce;
+        }
+    }
+
+
+
+
+
+
+    @media screen and (max-width:1200px){
+        nav{
+            background: #161a1de3;    
+            height: 80px;
+            width: 100%;
+            max-width: 1400px;
+        }
+    
+        .container .musica{
+            display: flex;
+            width: 100%; 
+        }
+
+        iframe{
+            display: flex;
+            justify-content: start;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            width:750px;
+            height:400px;
+        }
+        .container{
+            width: 100%;
+            display: inline-block;
+            align-items: center;
+        }
+
+        .container .musica iframe {
+            margin: auto; 
+            display: flex;
+            justify-content: center;
+            position: relative;
+        }
+
+        .container pre{
+            margin-top: 20px;
+            font-size: 18px;
+            width: 100%; 
+            display: flex;
+            justify-content: center;
+        }
+        
+        .l{
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+
+
+
+
+
+    @media screen and (max-width:1000px){
+
+        body{
+    
+        width: 100%;
+        }
+
+        nav{
+            background: #161a1de3;    
+            height: 80px;
+            width:100%;
+            max-width: 1000px;
+        }
+
+        .container{
+            
+            width: 100%;     
+        }
+
+        iframe{
+            display: flex;
+            justify-content: start;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+            width:600px;
+            height:350px;
+        }
+
+        .container pre{
+            font-size: 20px;
+            width: 100%;   
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            margin-left: 20px;
+        }
+
+    }
+        
+       
